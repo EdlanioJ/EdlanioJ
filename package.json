@@ -13,6 +13,9 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "clsx": "^2.0.0",
+    "framer-motion": "^10.16.4",
+    "gsap": "^3.12.2",
     "next": "^13.4.19",
     "react": "^18.2.0",
     "react-dom": "^18.2.0"
