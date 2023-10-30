@@ -2,20 +2,19 @@ import '@/styles/globals.css'
 
 import { type Metadata } from 'next'
 import { type ReactNode } from 'react'
-import { Inter } from 'next/font/google'
+import { Poppins } from 'next/font/google'
 
-const inter = Inter({
+import { Header } from '@/components/Header'
+
+const poppins = Poppins({
   subsets: ['latin'],
   weight: ['400', '600', '700', '900'],
-  variable: '--font-inter',
+  variable: '--font-poppins',
 })
 
 export const metadata: Metadata = {
-  title: {
-    default: 'EdlanioJ',
-    template: '%s | EdlanioJ',
-  },
-  description: 'EdlanioJ Portfolio',
+  title: 'Portfolio | Edlânio Júlio',
+  description: 'Edlânio Júlio Portfolio',
 }
 
 type Props = {
@@ -23,8 +22,11 @@ type Props = {
 }
 export default function Layout({ children }: Props) {
   return (
-    <html lang="en" className={`${inter.variable}`}>
-      <body className="dark:bg-zinc-900">{children}</body>
+    <html lang="en" className={`${poppins.variable} scroll-smooth antialiased`}>
+      <body className="bg-gray-900 text-gray-50">
+        <Header />
+        {children}
+      </body>
     </html>
   )
 }
