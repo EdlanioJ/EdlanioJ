@@ -28,7 +28,6 @@ export function Hero() {
         trigger: document.documentElement,
         start: 0,
         end: window.innerHeight,
-        markers: true,
         scrub: true,
       },
     })
