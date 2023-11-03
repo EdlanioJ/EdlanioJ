@@ -16,6 +16,7 @@
     "clsx": "^2.0.0",
     "framer-motion": "^10.16.4",
     "gsap": "^3.12.2",
+    "lucide-react": "^0.291.0",
     "next": "^13.4.19",
     "react": "^18.2.0",
     "react-dom": "^18.2.0"
