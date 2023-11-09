@@ -5,6 +5,7 @@ import { type ReactNode } from 'react'
 import { Poppins } from 'next/font/google'
 
 import { Header } from '@/components/Header'
+import { ToastProvider } from '@/components/Toast'
 
 const poppins = Poppins({
   subsets: ['latin'],
@@ -25,7 +26,7 @@ export default function Layout({ children }: Props) {
     <html lang="en" className={`${poppins.variable} scroll-smooth antialiased`}>
       <body className="bg-gray-900 text-gray-50">
         <Header />
-        {children}
+        <ToastProvider>{children}</ToastProvider>
       </body>
     </html>
   )
