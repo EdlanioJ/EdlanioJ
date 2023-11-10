@@ -50,7 +50,7 @@ export function ContactForm() {
     <form
       onSubmit={handleSubmit}
       ref={form}
-      className="flex w-full flex-col gap-4 shadow-md md:col-start-2 md:row-span-2 md:max-w-md [&>*]:px-4 [&>*]:py-2 [&>*]:text-gray-50 [&>*]:outline-none [&>*]:ring-0 [&>button]:h-12 [&>input]:h-12 [&>input]:bg-gray-700 [&>textarea]:bg-gray-700"
+      className="ml-auto flex w-full flex-col gap-4 shadow-md md:col-start-2 md:row-span-2 md:max-w-md [&>*]:px-4 [&>*]:py-2 [&>*]:text-gray-50 [&>*]:outline-none [&>*]:ring-0 [&>button]:h-12 [&>input]:h-12 [&>input]:bg-gray-700 [&>textarea]:bg-gray-700"
     >
       <input
         type="text"
