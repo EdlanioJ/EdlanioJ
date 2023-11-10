@@ -49,12 +49,12 @@ export function Hero() {
             ref={secondText}
             className="mx-[-100%] w-[105%] whitespace-nowrap "
           >
-            FullStack
+            FullStack DEV
           </div>
         </div>
       </div>
-      <div className="px-4 text-xl font-black uppercase md:px-0 md:text-3xl lg:text-4xl">
-        <p className="[-webkit-text-fill-color:transparent] [-webkit-text-stroke-width:1px] lg:[-webkit-text-stroke-width:2px]">
+      <div className="px-4 text-xl font-black uppercase md:px-0 md:text-3xl lg:text-5xl">
+        <p className="[-webkit-text-fill-color:transparent] [-webkit-text-stroke-width:1px] md:[-webkit-text-stroke-width:2px]">
           Hi there
         </p>
         <h1 className="leading-snug">

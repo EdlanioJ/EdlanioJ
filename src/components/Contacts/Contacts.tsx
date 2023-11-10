@@ -5,7 +5,7 @@ export function Contacts() {
   return (
     <section id="contact" className="flex w-full flex-col items-center pt-24">
       <div className="container flex h-full flex-col gap-14 px-4 pb-4 lg:px-0 lg:pb-16">
-        <h1 className="text-5xl font-black uppercase text-teal-500 [-webkit-text-fill-color:transparent] [-webkit-text-stroke-width:2px] lg:[-webkit-text-stroke-width:2px]">
+        <h1 className="text-5xl font-black uppercase text-teal-500 [-webkit-text-fill-color:transparent] [-webkit-text-stroke-width:2px] ">
           GET IN TOUCH
         </h1>
 
