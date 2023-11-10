@@ -5,7 +5,7 @@ export function About() {
   return (
     <section
       id="about"
-      className="flex h-screen w-full flex-col items-center pt-24"
+      className="flex w-full flex-col items-center pt-24 lg:h-screen"
     >
       <Content />
       <Skills />

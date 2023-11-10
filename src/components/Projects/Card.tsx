@@ -16,17 +16,17 @@ export function Card() {
         <div className="mt-2 flex gap-2">
           <a
             target="_blank"
-            className="flex h-8 w-24 items-center justify-center gap-2 bg-teal-500 text-xs font-semibold transition-colors hover:bg-teal-500/75"
+            className="flex h-12 w-28 items-center justify-center gap-2 bg-teal-500 text-lg font-semibold transition-colors hover:bg-teal-500/75"
             href="https://github.com/EdlanioJ"
           >
-            <Code /> Code
+            <Code size={24} /> Code
           </a>
           <a
             target="_blank"
-            className="flex h-8 w-24 items-center justify-center gap-2 bg-orange-500 text-xs font-semibold  transition-colors hover:bg-orange-500/75"
+            className="flex h-12 w-28 items-center justify-center gap-2 bg-orange-500 text-lg font-semibold  transition-colors hover:bg-orange-500/75"
             href="https://github.com/EdlanioJ"
           >
-            <Radio /> Live
+            <Radio size={24} /> Live
           </a>
         </div>
       </div>

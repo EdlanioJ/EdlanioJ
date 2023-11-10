@@ -17,8 +17,8 @@ type TitleProps = {
 }
 function CategoryTitle({ children }: TitleProps) {
   return (
-    <div className="flex items-center justify-between px-6 text-center text-4xl uppercase">
-      <strong className="[-webkit-text-fill-color:transparent] [-webkit-text-stroke-width:2px]">
+    <div className="flex items-center justify-between px-2 text-center text-xl uppercase lg:px-6 lg:text-4xl">
+      <strong className="[-webkit-text-fill-color:transparent] [-webkit-text-stroke-width:1px] lg:[-webkit-text-stroke-width:2px]">
         {children}
       </strong>
     </div>
@@ -45,36 +45,28 @@ export function SkillCategory({ isReverse, skills, title }: Props) {
     gsap.set(firstElement.current, { xPercent })
     gsap.set(secondElement.current, { xPercent })
 
-    xPercent += 0.1 * direction
+    xPercent += 0.06 * direction
     requestAnimationFrame(animation)
   }
 
   function renderSkills(ref: RefObject<HTMLDivElement>) {
     return (
-      <div ref={ref} className="flex gap-6 pl-6">
+      <div ref={ref} className="flex gap-2 pl-2 lg:gap-4 lg:pl-4">
         {skills.map(({ icon: Icon, name }) => (
-          <div key={name} className="flex items-center gap-2">
-            {isReverse ? (
-              <>
-                <span className="truncate">{name}</span>
-                <Icon className="h-10 w-10 fill-gray-50" />
-              </>
-            ) : (
-              <>
-                <Icon className="h-10 w-10 fill-gray-50" />
-                <span className="truncate">{name}</span>
-              </>
-            )}
+          <div key={name} className="flex items-center gap-1 lg:gap-2">
+            <Icon className="h-4 w-4 fill-gray-50 lg:h-8 lg:w-8" />
+            <span className="truncate">{name}</span>
           </div>
         ))}
       </div>
     )
   }
+
   return (
-    <div className="flex h-24 divide-x-2 divide-gray-900">
+    <div className="flex h-12 divide-x-2 divide-gray-900 lg:h-16">
       {isReverse ? (
         <>
-          <div className="flex w-full flex-1 items-center overflow-hidden text-4xl">
+          <div className="flex w-full flex-1 items-center overflow-hidden text-xl lg:text-3xl">
             {renderSkills(firstElement)}
             {renderSkills(secondElement)}
           </div>
@@ -83,7 +75,7 @@ export function SkillCategory({ isReverse, skills, title }: Props) {
       ) : (
         <>
           <CategoryTitle>{title}</CategoryTitle>
-          <div className="flex w-full flex-1 items-center overflow-hidden text-4xl">
+          <div className="flex w-full flex-1 items-center overflow-hidden text-xl lg:text-3xl">
             {renderSkills(firstElement)}
             {renderSkills(secondElement)}
           </div>

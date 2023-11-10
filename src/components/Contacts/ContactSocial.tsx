@@ -2,7 +2,7 @@ import { Linkedin, Mail, Phone } from 'lucide-react'
 
 export function ContactSocial() {
   return (
-    <div className="flex flex-col gap-4 text-sm [&>a>div>p]:font-medium">
+    <div className="flex flex-col gap-4 text-sm max-md:row-start-3 max-md:row-end-3 md:col-start-1 md:row-end-2 [&>a>div>p]:font-medium">
       <a
         href="mailto:edlanioj@gmail.com"
         target="_blank"
@@ -27,7 +27,7 @@ export function ContactSocial() {
           <Phone className="text-teal-500" />
         </div>
         <div className="flex flex-col justify-center pl-3">
-          <p>Whatsapp direct message</p>
+          <p>Whatsapp DM</p>
           <strong>Edlâneo Júlio</strong>
         </div>
       </a>

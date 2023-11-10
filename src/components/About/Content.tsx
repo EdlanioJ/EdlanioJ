@@ -3,12 +3,12 @@ import Image from 'next/image'
 
 export function Content() {
   return (
-    <div className="container flex h-full flex-col gap-4">
-      <h2 className="text-5xl font-black uppercase text-teal-500 [-webkit-text-fill-color:transparent] [-webkit-text-stroke-width:2px]">
+    <div className="container flex h-full max-w-full flex-col gap-8 px-4 pb-8 lg:px-0 lg:pb-0">
+      <h2 className=" text-4xl font-black uppercase text-teal-500 [-webkit-text-fill-color:transparent] [-webkit-text-stroke-width:1px] lg:[-webkit-text-stroke-width:2px]">
         About
       </h2>
-      <div className="flex h-full items-center justify-center gap-8">
-        <div className="w-[640px] text-lg">
+      <div className="flex h-full flex-col-reverse items-center justify-center gap-8 lg:flex-row">
+        <div className="max-w-2xl text-lg">
           <p>
             An enthusiastic full-stack developer, passionate about unraveling
             technological challenges and crafting innovative solutions.

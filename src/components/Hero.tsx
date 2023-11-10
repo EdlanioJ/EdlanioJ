@@ -53,11 +53,11 @@ export function Hero() {
           </div>
         </div>
       </div>
-      <div>
-        <p className="text-4xl font-black uppercase [-webkit-text-fill-color:transparent] [-webkit-text-stroke-width:2px]">
+      <div className="px-4 text-xl font-black uppercase md:px-0 md:text-3xl lg:text-4xl">
+        <p className="[-webkit-text-fill-color:transparent] [-webkit-text-stroke-width:1px] lg:[-webkit-text-stroke-width:2px]">
           Hi there
         </p>
-        <h1 className="text-4xl font-black uppercase leading-snug lg:text-5xl">
+        <h1 className="leading-snug">
           I'm <span className="text-teal-500">E</span>dlâneo{' '}
           <span className="text-orange-500">J</span>úlio.
           <br /> A <span className="text-teal-500">Full-Stack</span> Developer
