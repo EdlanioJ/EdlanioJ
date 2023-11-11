@@ -32,6 +32,7 @@ export function Hero() {
       },
     })
   }, [])
+
   return (
     <section className="relative flex h-screen flex-col items-center justify-center">
       <div className="absolute left-0 top-0 -z-10 block w-full">
@@ -53,7 +54,7 @@ export function Hero() {
           </div>
         </div>
       </div>
-      <div className="px-4 text-xl font-black uppercase md:px-0 md:text-3xl lg:text-5xl">
+      <div className="px-4 text-xl font-black uppercase md:px-0 md:text-5xl">
         <p className="[-webkit-text-fill-color:transparent] [-webkit-text-stroke-width:1px] md:[-webkit-text-stroke-width:2px]">
           Hi there
         </p>

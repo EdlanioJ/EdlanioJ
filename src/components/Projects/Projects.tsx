@@ -1,4 +1,5 @@
 import { Card } from './Card'
+import { projects } from './data'
 
 export function Projects() {
   return (
@@ -12,12 +13,9 @@ export function Projects() {
         </h2>
 
         <div className="grid grid-cols-1 gap-4 px-10 md:grid-cols-2 md:px-0 lg:grid-cols-3">
-          <Card />
-          <Card />
-          <Card />
-          <Card />
-          <Card />
-          <Card />
+          {projects.map((project, key) => (
+            <Card key={key} project={project} />
+          ))}
         </div>
       </div>
     </section>
